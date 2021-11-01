@@ -5,14 +5,16 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
-import { ComponenteProvaComponent } from './homepage/componente-prova/componente-prova.component';
+import { FaqContainerComponent } from './homepage/faq-container/faq-container.component';
+import { FaqListComponent } from './homepage/faq-list/faq-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     LoginpageComponent,
-    ComponenteProvaComponent
+    FaqContainerComponent,
+    FaqListComponent
   ],
   imports: [
     BrowserModule,
