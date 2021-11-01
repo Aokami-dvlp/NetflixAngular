@@ -5,14 +5,18 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
-import { ComponenteProvaComponent } from './homepage/componente-prova/componente-prova.component';
+import { NavbarContainerComponent } from './homepage/navbar-container/navbar-container.component';
+import { HeroContainerComponent } from './homepage/hero-container/hero-container.component';
+import { FormMailComponentComponent } from './homepage/form-mail-component/form-mail-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     LoginpageComponent,
-    ComponenteProvaComponent
+    NavbarContainerComponent,
+    HeroContainerComponent,
+    FormMailComponentComponent
   ],
   imports: [
     BrowserModule,
