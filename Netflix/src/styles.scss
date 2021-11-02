@@ -1,4 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+ngb-accordion{
+  .card{
+    background-color: #303030;
+    color: #ffffff;
+    border: 1px solid black;
+    border-radius: 0;
+    width: 800px;
+    font-size: 1.4rem;
+  }
 
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+  .card-header{
+    border-top: 8px solid black;
+    border-bottom: 1px solid black;
+    width: 800px;
+    height: 75px;
+    padding: 0;
+  .btn{
+    text-align: left;
+    background-color: #303030;
+    border-radius: 0;
+    font-size: 1.6rem;
+    color: #ffffff;
+    min-width: 100%;
+    min-height: 100%;
+    &:focus{
+      border:none;
+      outline: none;
+      text-decoration: none;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+    span{
+      font-size: 2rem;
+      float: right;
+    }
+
+  }
+  }
+}
