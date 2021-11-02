@@ -1,1 +1,5 @@
-<p>hero-card works!</p>
+<div *ngFor="let hero of heroes">
+  <h1>{{ hero.title }}</h1>
+  <p>{{ hero.description }}</p>
+  <img src="{{ hero.image }}" >
+</div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Hero } from 'app/shared/models/Hero';
 
 @Component({
   selector: 'hero-card',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-card.component.scss']
 })
 export class HeroCardComponent implements OnInit {
+
+  @Input() heroes: Hero[] = [];
 
   constructor() { }
 
