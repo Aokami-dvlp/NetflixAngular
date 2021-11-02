@@ -3,16 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomepageComponent } from './homepage/homepage.component';
-import { LoginpageComponent } from './loginpage/loginpage.component';
-import { ComponenteProvaComponent } from './homepage/componente-prova/componente-prova.component';
+import { HeroContainerComponent } from './core/components/hero-container/hero-container.component';
+import { HeroCardComponent } from './core/components/hero-card/hero-card.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
-    LoginpageComponent,
-    ComponenteProvaComponent
+    HeroContainerComponent,
+    HeroCardComponent
   ],
   imports: [
     BrowserModule,
