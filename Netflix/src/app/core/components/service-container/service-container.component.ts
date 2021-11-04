@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from 'app/shared/models/Hero';
+import { Service } from 'app/shared/models/Service';
 
 @Component({
-  selector: 'hero-container',
-  templateUrl: './hero-container.component.html',
-  styleUrls: ['./hero-container.component.scss']
+  selector: 'service-container',
+  templateUrl: './service-container.component.html',
+  styleUrls: ['./service-container.component.scss']
 })
-export class HeroContainerComponent implements OnInit {
+export class ServiceContainerComponent implements OnInit {
 
-  heroes: Hero[] = [
+  services: Service[] = [
     {
       title: 'Goditi Netflix sulla tua TV.',
       description: 'Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.',
