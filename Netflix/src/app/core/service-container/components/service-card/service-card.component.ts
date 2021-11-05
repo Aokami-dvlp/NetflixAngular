@@ -8,7 +8,7 @@ import { Service } from 'app/shared/models/Service';
 })
 export class ServiceCardComponent implements OnInit {
 
-  @Input() services: Service[] = [];
+  @Input() service!: Service;
 
   constructor() { }
 
