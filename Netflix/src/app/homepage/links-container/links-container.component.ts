@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { Links } from '../models/links';
 
 @Component({
   selector: 'links-container',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LinksContainerComponent implements OnInit {
 
-  links = [
+  links: Links[] = [
     {
       name1: "Domande frequenti",
       name2: "Rapporti con gli investitori",
@@ -34,18 +35,10 @@ export class LinksContainerComponent implements OnInit {
       name4: "Note legali"
     }
   ];
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-}
-
-export class Links {
-  name1!: string;
-  name2!: string;
-  name3!: string;
-  name4!: string;
-  name5?: string;
-  name6?: string;
 }
