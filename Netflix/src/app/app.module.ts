@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
-import { FooterContainerComponent } from './homepage/footer-container/footer-container/footer-container.component';
-import { LinksContainerComponent } from './homepage/links-container/links-container/links-container.component';
-import { LangButtonComponent } from './homepage/lang-button/lang-button/lang-button.component';
+import { FooterContainerComponent } from './homepage/footer-container/footer-container.component';
+import { LinksContainerComponent } from './homepage/links-container/links-container.component';
+import { LangButtonComponent } from './homepage/lang-button/lang-button.component';
 
 @NgModule({
   declarations: [
