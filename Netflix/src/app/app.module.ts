@@ -7,6 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { FaqContainerComponent } from './homepage/faq-container/faq-container.component';
 import { FaqListComponent } from './homepage/faq-list/faq-list.component';
+import { FaqCardComponent } from './homepage/faq-card/faq-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FaqListComponent } from './homepage/faq-list/faq-list.component';
     HomepageComponent,
     LoginpageComponent,
     FaqContainerComponent,
-    FaqListComponent
+    FaqListComponent,
+    FaqCardComponent
   ],
   imports: [
     BrowserModule,
