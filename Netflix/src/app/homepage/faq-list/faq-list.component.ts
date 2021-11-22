@@ -1,13 +1,11 @@
 import { Component,  OnInit } from '@angular/core';
 import { Faq } from '../../models/faq'
-import {NgbAccordionConfig} from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
   selector: 'faq-list',
   templateUrl: './faq-list.component.html',
   styleUrls: ['./faq-list.component.scss'],
-  providers: [NgbAccordionConfig]
 })
 export class FaqListComponent implements OnInit {
 
@@ -51,9 +49,3 @@ export class FaqListComponent implements OnInit {
 
 }
 
-export class NgbdAccordionConfig {
-  constructor(config: NgbAccordionConfig) {
-    config.closeOthers = true;
-    config.type = 'info';
-  }
-}
