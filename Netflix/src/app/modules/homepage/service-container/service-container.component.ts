@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Service } from 'app/shared/models/Service';
+import { Service } from 'app/models/Service';
 
 @Component({
   selector: 'service-container',
@@ -7,6 +7,8 @@ import { Service } from 'app/shared/models/Service';
   styleUrls: ['./service-container.component.scss']
 })
 export class ServiceContainerComponent implements OnInit {
+
+  // Service
 
   services: Service[] = [
     {
