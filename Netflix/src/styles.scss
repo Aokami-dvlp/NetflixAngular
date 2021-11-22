@@ -1,3 +1,7 @@
+$gradient-bgImg: linear-gradient(to top, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .8) 100%);
+$hero-bgImg: url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/ac4f81b7-3d82-4f6f-acfd-d2f68b720b75/IT-it-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+$netflixRed: #e50914;
+
 ngb-accordion{
   .card{
     background-color: #303030;
@@ -38,4 +42,6 @@ ngb-accordion{
   }
   }
 }
+
+
 @import '~bootstrap/scss/bootstrap';

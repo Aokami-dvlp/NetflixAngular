@@ -1,8 +1,8 @@
-@import './../../colors';
+@import './../../../styles.scss';
 nav {
     position: absolute;
     left: 0;
-    right: 0;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .netflix-logo {
