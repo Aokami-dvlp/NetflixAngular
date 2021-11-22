@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ServiceContainerComponent } from './homepage/service-container/service-container.component';
+import { ServiceCardComponent } from './homepage/service-card/service-card.component';
+
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { HeaderComponent } from './loginpage/header/header.component';
@@ -22,8 +25,10 @@ import { FooterComponent } from './loginpage/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
+    ServiceContainerComponent,
+    ServiceCardComponent,
     LoginpageComponent,
+    HomepageComponent,
     HeaderComponent,
     FaqContainerComponent,
     FaqListComponent,

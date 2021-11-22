@@ -1,0 +1,18 @@
+* {
+  color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.card-container {
+  border-bottom: 8px solid #222;
+  padding: 0 19%;
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 26px;
+  }
+}
