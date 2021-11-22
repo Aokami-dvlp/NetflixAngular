@@ -26,7 +26,8 @@ import { FooterComponent } from './loginpage/footer/footer.component';
     NavbarContainerComponent,
     HeroContainerComponent,
     FormMailComponentComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
