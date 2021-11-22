@@ -9,6 +9,15 @@ import { FaqContainerComponent } from './homepage/faq-container/faq-container.co
 import { FaqListComponent } from './homepage/faq-list/faq-list.component';
 import { FaqCardComponent } from './homepage/faq-card/faq-card.component';
 
+import { FooterContainerComponent } from './homepage/footer-container/footer-container.component';
+import { LinksContainerComponent } from './homepage/links-container/links-container.component';
+import { LangButtonComponent } from './homepage/lang-button/lang-button.component';
+import { NavbarContainerComponent } from './homepage/navbar-container/navbar-container.component';
+import { HeroContainerComponent } from './homepage/hero-container/hero-container.component';
+import { FormMailComponentComponent } from './homepage/form-mail-component/form-mail-component.component';
+import { FooterComponent } from './loginpage/footer/footer.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +25,14 @@ import { FaqCardComponent } from './homepage/faq-card/faq-card.component';
     LoginpageComponent,
     FaqContainerComponent,
     FaqListComponent,
-    FaqCardComponent
+    FaqCardComponent,
+    FooterContainerComponent,
+    LinksContainerComponent,
+    LangButtonComponent,
+    NavbarContainerComponent,
+    HeroContainerComponent,
+    FormMailComponentComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
