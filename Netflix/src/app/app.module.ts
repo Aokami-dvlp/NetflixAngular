@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { NavbarContainerComponent } from './homepage/navbar-container/navbar-container.component';
+import { HeroContainerComponent } from './homepage/hero-container/hero-container.component';
+import { FormMailComponentComponent } from './homepage/form-mail-component/form-mail-component.component';
 import { FooterComponent } from './loginpage/footer/footer.component';
 
 @NgModule({
@@ -12,6 +15,9 @@ import { FooterComponent } from './loginpage/footer/footer.component';
     AppComponent,
     HomepageComponent,
     LoginpageComponent,
+    NavbarContainerComponent,
+    HeroContainerComponent,
+    FormMailComponentComponent
     FooterComponent
   ],
   imports: [
