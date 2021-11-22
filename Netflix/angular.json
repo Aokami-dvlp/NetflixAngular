@@ -34,8 +34,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -70,18 +69,6 @@
               "namedChunks": true
             }
           },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "Netflix:build:production"
-            },
-            "development": {
-              "browserTarget": "Netflix:build:development"
-            }
-          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
@@ -103,8 +90,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -114,3 +100,4 @@
   },
   "defaultProject": "Netflix"
 }
+
