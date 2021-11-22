@@ -1,18 +1,18 @@
 {
-    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-    "cli": {
-        "analytics": "55b30802-8454-4465-8cd1-9154daa1140d"
-    },
-    "version": 1,
-    "newProjectRoot": "projects",
-    "projects": {
-        "Netflix": {
-            "projectType": "application",
-            "schematics": {
-                "@schematics/angular:component": {
-                    "style": "scss"
-                },
-                "@schematics/angular:application": {
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "55b30802-8454-4465-8cd1-9154daa1140d"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "Netflix": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+          "@schematics/angular:application": {
                     "strict": true
                 }
             },
@@ -107,7 +107,6 @@
                     }
                 }
             }
-        }
-    },
+          },
     "defaultProject": "Netflix"
 }
