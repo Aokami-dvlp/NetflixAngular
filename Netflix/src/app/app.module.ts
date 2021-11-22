@@ -8,6 +8,7 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
 import { NavbarContainerComponent } from './homepage/navbar-container/navbar-container.component';
 import { HeroContainerComponent } from './homepage/hero-container/hero-container.component';
 import { FormMailComponentComponent } from './homepage/form-mail-component/form-mail-component.component';
+import { FooterComponent } from './loginpage/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormMailComponentComponent } from './homepage/form-mail-component/form-
     NavbarContainerComponent,
     HeroContainerComponent,
     FormMailComponentComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
