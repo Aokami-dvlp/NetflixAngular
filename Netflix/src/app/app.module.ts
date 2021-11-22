@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { FaqContainerComponent } from './homepage/faq-container/faq-container.component';
+import { FaqListComponent } from './homepage/faq-list/faq-list.component';
+import { FaqCardComponent } from './homepage/faq-card/faq-card.component';
 
 import { FooterContainerComponent } from './homepage/footer-container/footer-container.component';
 import { LinksContainerComponent } from './homepage/links-container/links-container.component';
@@ -20,6 +23,9 @@ import { FooterComponent } from './loginpage/footer/footer.component';
     AppComponent,
     HomepageComponent,
     LoginpageComponent,
+    FaqContainerComponent,
+    FaqListComponent,
+    FaqCardComponent,
     FooterContainerComponent,
     LinksContainerComponent,
     LangButtonComponent,
