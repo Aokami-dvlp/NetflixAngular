@@ -4,19 +4,8 @@
 }
 
 .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-bottom: 8px solid #222;
   padding: 0 19%;
-
-  &:nth-child(odd) {
-    flex-direction: row;
-  }
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
   h1 {
     font-weight: 700;
     font-size: 50px;

@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ServiceContainerComponent } from './modules/homepage/service-container/service-container.component';
-import { ServiceCardComponent } from './modules/homepage/service-container/components/service-card/service-card.component';
-import { NavbarComponent } from './layout/navbar/navbar.component';
+import { ServiceContainerComponent } from './homepage/service-container/service-container.component';
+import { ServiceCardComponent } from './homepage/service-card/service-card.component';
+import { LoginpageComponent } from 'src/app/loginpage/loginpage.component';
+import { HomepageComponent } from 'src/app/homepage/homepage.component'
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     AppComponent,
     ServiceContainerComponent,
     ServiceCardComponent,
-    NavbarComponent
+    LoginpageComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,

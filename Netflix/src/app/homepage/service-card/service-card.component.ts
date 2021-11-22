@@ -15,4 +15,11 @@ export class ServiceCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeDirection(service: Service) {
+    if (service.id % 2 === 0)
+      return 'row-reverse';
+      else
+      return 'row';
+  }
+
 }
