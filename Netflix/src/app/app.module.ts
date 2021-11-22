@@ -22,10 +22,10 @@ import { FooterComponent } from './loginpage/footer/footer.component';
     LoginpageComponent,
     FooterContainerComponent,
     LinksContainerComponent,
-    LangButtonComponent
+    LangButtonComponent,
     NavbarContainerComponent,
     HeroContainerComponent,
-    FormMailComponentComponent
+    FormMailComponentComponent,
     FooterComponent
   ],
   imports: [
