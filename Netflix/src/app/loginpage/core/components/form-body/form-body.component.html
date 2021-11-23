@@ -1,26 +1,27 @@
 
-<div class="container login-form">
+<div class="login-form">
   <div class="mb-3">
-   <h1>Accedi</h1>
+   <h2>Accedi</h2>
   </div>
-  <form action="">
-    <div class="mb-4">
+  <form action="#">
+    <div class="mb-3">
       <input type="text" name="name" class="form-control" placeholder="Email o numero di telefono" required ngModel #nameField="ngModel">
-      <p *ngIf="nameField.touched && nameField.invalid" class="text-danger"><small>Inserisci un indirizzo email o numero di telefono valido.</small></p>
+      <p *ngIf="nameField.touched && nameField.invalid" class="warning-message ml-2" ><small>Inserisci un indirizzo email o numero di telefono valido.</small></p>
     </div>
 
     <div class="mb-4">
       <input type="password" name="password" class="form-control" placeholder="Password" required ngModel #passwordField="ngModel">
-      <p *ngIf="passwordField.touched && passwordField.invalid" class="text-danger"><small>La password deve avere una lunghezza compresa tra 4 e 60 caratteri.</small></p>
+      <p *ngIf="passwordField.touched && passwordField.invalid" class="warning-message"><small>La password deve avere una lunghezza compresa tra 4 e 60 caratteri.</small></p>
     </div>
 
-    <div class="">
-      <button class="w-100 btn btn-lg btn-danger  mt-3" type="submit">Accedi</button>
+    <div class="button">
+      <button class="w-100 btn btn-lg active mt-3" data-bs-toggle="button" autocomplete="off" aria-pressed="true" type="submit">Accedi</button>
     </div>
 
-    <div class="checkbox mb-3 d-flex direction-row justify-content-between">
-      <label>
-        <input type="checkbox" value="remember-me"> Ricordami
+    <div class="checkbox d-flex direction-row justify-content-between">
+      <label> Ricordami
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
       </label>
       <a href="">Serve aiuto?</a>
     </div>
@@ -34,6 +35,22 @@
             <span class="fbBtnText">Accedi con Facebook</span>
           </div>
         </button>
+      </div>
+      <div>
+        <p>Prima volta su netflix?<a href="">Registrati.</a></p>
+      </div>
+      <div class="recaptcha-terms">
+        <p>
+          <span>Questa pagina è protetta da Google reCAPTCHA per garantire che tu non sia un bot.</span>
+          <button (click)="info()" *ngIf="unclicked; else clicked">{{ unclicked }}</button>
+        </p>
+        <ng-template #clicked>
+          <div class="recaptcha-terms-hidden">
+            <span>
+              Le informazioni raccolte da Google reCAPTCHA sono soggette alle<a class="terms-link" href="https://policies.google.com/privacy">Norme sulla privacy</a> e ai<a class="terms-link" href="https://policies.google.com/terms">Termini di servizio</a> di Google e vengono utilizzate per fornire, mantenere e migliorare il servizio reCAPTCHA e per fini di sicurezza generale (non sono utilizzate per gli annunci personalizzati di Google).
+            </span>
+          </div>
+      </ng-template>
       </div>
     </div>
   </form>

@@ -10,13 +10,14 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
 import { LoginFormComponent } from './loginpage/core/components/login-form/login-form.component';
 import { FormBodyComponent } from './loginpage/core/components/form-body/form-body.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     LoginpageComponent,
     LoginFormComponent,
-    FormBodyComponent
+    FormBodyComponent,
   ],
   imports: [
     BrowserModule,
