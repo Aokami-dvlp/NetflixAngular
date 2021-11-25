@@ -1,0 +1,16 @@
+div {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/569d3d3c-54b3-434c-bbb5-61a8cf96cf9b/IT-it-20211115-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 0;
+
+}}

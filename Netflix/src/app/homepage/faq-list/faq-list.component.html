@@ -1,0 +1,12 @@
+<ngb-accordion [closeOthers]="true">
+  <ngb-panel *ngFor="let faq of faqs">
+    <ng-template ngbPanelTitle>
+    {{faq.question}}
+  </ng-template>
+  <ng-template ngbPanelContent>
+    <p [innerText]="faq.answer"></p>
+  </ng-template>
+<!--     <faq-card [faq]="faq"></faq-card> -->
+</ngb-panel>
+</ngb-accordion>
+

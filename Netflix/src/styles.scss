@@ -1,4 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+// $gradient-bgImg: linear-gradient(to top, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .8) 100%);
+// $hero-bgImg: url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/ac4f81b7-3d82-4f6f-acfd-d2f68b720b75/IT-it-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+// $netflixRed: #e50914;
 
-/* Importing Bootstrap SCSS file. */
+@font-face {
+  font-family: 'Netflix Sans'-700;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+ngb-accordion {
+    .card {
+        background-color: #303030;
+        color: #ffffff;
+        border: 1px solid black;
+        border-radius: 0;
+        width: 800px;
+        font-size: 1.4rem;
+    }
+    .card-header {
+        border-top: 8px solid black;
+        border-bottom: 1px solid black;
+        width: 800px;
+        height: 75px;
+        padding: 0;
+        .btn {
+            text-align: left;
+            background-color: #303030;
+            border-radius: 0;
+            font-size: 1.6rem;
+            color: #ffffff;
+            min-width: 100%;
+            min-height: 100%;
+            &:focus {
+                border: none;
+                outline: none;
+                text-decoration: none;
+                box-shadow: none;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+            span {
+                font-size: 2rem;
+                float: right;
+            }
+        }
+    }
+}
+
 @import '~bootstrap/scss/bootstrap';

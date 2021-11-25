@@ -1,0 +1,27 @@
+@import './../../../styles.scss';
+@import './../../colors';
+div {
+    background-image: $gradient-bgImg, $hero-bgImg;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 8px solid #222;
+}
+
+h1 {
+    font-size: 64px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0;
+
+}
+
+h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
