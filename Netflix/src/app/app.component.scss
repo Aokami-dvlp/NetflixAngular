@@ -3,3 +3,14 @@
 div {
   font-family: Netflix Sans;
 }
+.bg-pages {
+  background-color:#141414;
+  height: 100vh;
+  width:100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -10;
+}

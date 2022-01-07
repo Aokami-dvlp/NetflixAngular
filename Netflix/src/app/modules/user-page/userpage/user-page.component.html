@@ -1,0 +1,12 @@
+<div>
+<h1 class="title">Chi vuole guardare Netflix?</h1>
+</div>
+<div class="row" *ngFor="let user of users">
+  <div class="col d-flex align-items-center flex-column">
+    <a href="#"><img src="{{user.imgUrl}}" alt="foto profilo"></a>
+    <p class="text-light">{{user.name}}</p>
+  </div>
+</div>
+<div class="col d-flex align-items-center flex-column">
+  <button type="button" class="btn btn-outline-secondary">Gestisci Profili</button>
+</div>

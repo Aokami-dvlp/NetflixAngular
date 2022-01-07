@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Service } from 'app/models/Service';
+import { Service } from 'app/shared/models/Service';
 
 @Component({
   selector: 'service-card',
