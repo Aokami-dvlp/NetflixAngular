@@ -1,12 +1,56 @@
-img{
-  width: 10rem;
-  height: 10rem;
+* {
+    background-color: #141414;
 }
 
-.title{
-  position: relative;
-  color: white;
-  text-align: center;
-  min-height: 200px;
-  margin-top: 15%;
+.container-fluid {
+    height: 100vh;
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+}
+
+a>img {
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+a:hover+p {
+    color: white;
+}
+
+a:hover>img {
+    border: 2px solid white;
+}
+
+.username {
+    color: #808080;
+}
+
+.title {
+    position: relative;
+    color: white;
+    text-align: center;
+    min-height: 20px;
+}
+
+.add-user-button img {
+    width: 80px;
+    height: 80px;
+    margin-top: 25%;
+}
+
+.add-user-button:hover img {
+    background-color: rgb(230, 230, 230);
+}
+
+.add-user-button:hover .add-button-icon {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+
+.add-button-icon {
+    width: 160px;
+    height: 160px;
 }

@@ -1,18 +1,82 @@
 * {
-  color: #ffffff;
-  font-family: Helvetica, Arial, sans-serif;
+    color: #ffffff;
 }
 
 .card-container {
-  border-bottom: 8px solid #222;
-  padding: 0 19%;
-  h1 {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 55px;
-  }
-  p {
-    font-weight: 400;
-    font-size: 26px;
-  }
+    border-bottom: 8px solid #222;
+    padding: 3% 3%;
+    z-index: 2;
+    .loop1 {
+        position: absolute;
+        width: 27%;
+        bottom: -34%;
+        right: 13%;
+        z-index: 0;
+    }
+    .loop2 {
+        position: absolute;
+        width: 23%;
+        bottom: -152%;
+        z-index: 0;
+        right: 15%;
+    }
+    img {
+        margin: 0 5%;
+        position: relative;
+        width: 40%;
+        z-index: 1;
+    }
+    .text-service {
+        width: 50%;
+        margin: 0 5%;
+        h1 {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 55px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 26px;
+        }
+    }
+}
+
+.download-banner {
+    width: 25%;
+    height: 90px;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, .25);
+    position: absolute;
+    bottom: -107%;
+    right: 61%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+#stranger-things {
+    background-image: url("./../../../../assets/boxshot.png");
+    height: 75px;
+    width: 15%;
+    background-size: cover;
+}
+
+#download-banner-text {
+    line-height: 20px;
+}
+
+#download-banner-text span:nth-child(3) {
+    color: #0071eb;
+}
+
+.download-icon {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+}
+
+.download-icon img {
+    width: 100%;
 }

@@ -1,5 +1,5 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-
 import { HompageRoutingModule } from './hompage-routing.module';
 import { FaqCardComponent } from './faq-card/faq-card.component';
 import { FaqContainerComponent } from './faq-container/faq-container.component';
@@ -13,7 +13,6 @@ import { NavbarContainerComponent } from './navbar-container/navbar-container.co
 import { ServiceCardComponent } from './service-card/service-card.component';
 import { ServiceContainerComponent } from './service-container/service-container.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { BrowserModule } from '@angular/platform-browser';
 import { HomepageComponent } from './homepage.component';
 
 
@@ -36,7 +35,7 @@ import { HomepageComponent } from './homepage.component';
 
     HompageRoutingModule,
     NgbModule,
-    BrowserModule
+    CommonModule
   ]
 })
 export class HompageModule { }

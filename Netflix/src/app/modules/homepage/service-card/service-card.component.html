@@ -1,10 +1,25 @@
 <!-- prova con nth:child-->
 
-<div class="card-container d-flex justify-content-center align-items-center"  [ngStyle]="{'flex-direction': changeDirection(service)}">
-  <div>
-    <h1>{{ service.title }}</h1>
-    <p>{{ service.description }}</p>
-  </div>
-  <img [src]="service.image" />
-</div>
+<div class="card-container d-flex justify-content-between align-items-center" [ngStyle]="{'flex-direction': changeDirection(service)}">
+    <div class="text-service">
+        <h1>{{ service.title }}</h1>
+        <p>{{ service.description }}</p>
+    </div>
+    <img [src]="service.image" />
+    <div *ngIf="service.title === 'Scarica le tue serie da guardare offline.'" class="download-banner">
+        <div id="stranger-things"></div>
+        <div id="download-banner-text">
+            <span>Stranger Things</span>
+            <br>
+            <span>Download in corso..</span>
+        </div>
+        <div class="download-icon">
+            <img src="assets/download-icon.gif" alt="download icon">
+        </div>
+    </div>
+    <video class="loop1" *ngIf="service.title === 'Goditi Netflix sulla tua TV.'" autoplay muted loop src="assets/video-tv-0819.m4v">Your browser do not support this video</video>
 
+    <video class="loop2" *ngIf="service.title === 'Guarda Netflix ovunque.'" autoplay muted loop src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v">
+        Your browser do not support this video
+    </video>
+</div>
