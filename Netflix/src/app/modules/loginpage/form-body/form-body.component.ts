@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
-import { Credentials } from './../../../shared/models/credentials'
+import { Credentials } from '../../../models/credentials'
 
 
 @Component({

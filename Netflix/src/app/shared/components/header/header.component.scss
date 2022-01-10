@@ -1,8 +1,15 @@
-img {
+:host img {
     width: 14rem;
     height: 9rem;
     margin-left: 1rem;
     margin-top: -1.85rem;
     z-index: 2;
     position: relative;
+}
+
+:host(.user) img {
+    width: 7rem;
+    height: 4.5rem;
+    margin-left: 2.5rem;
+    margin-top: 0;
 }

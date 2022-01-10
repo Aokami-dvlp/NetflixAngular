@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { Links } from '../../../shared/models/links';
+import { Links } from '../../../models/links';
 
 @Component({
   selector: 'links-container',

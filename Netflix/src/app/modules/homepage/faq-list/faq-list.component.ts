@@ -1,5 +1,5 @@
 import { Component,  OnInit } from '@angular/core';
-import { Faq } from 'app/shared/models/faq';
+import { Faq } from 'app/models/faq';
 
 
 

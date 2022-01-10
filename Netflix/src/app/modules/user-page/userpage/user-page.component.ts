@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IUser } from 'app/shared/models/user-interface';
+import { IUser } from 'app/models/user-interface';
 
 @Component({
   selector: 'user-page',
