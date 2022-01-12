@@ -1,0 +1,134 @@
+<!-- navbar -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+
+        <a class="navbar-brand" href="#"><img class="logo" src="./../../assets/Netflix-Logo.wine.svg" alt=""></a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button> -->
+        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Serie TV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Film</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nuovi e popolari</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">La mia lista</a>
+                </li>
+            </ul>
+
+
+            <!-- dropdown destra -->
+
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item active mr-3">
+                    <i style="font-size: 1.3em;" class="bi bi-search"></i>
+                </li>
+                <li class="nav-item active mr-3">
+                    <a class="nav-link" href="#">bambini</a>
+                </li>
+                <li class="nav-item active mr-3">
+                    <i style="font-size: 1.4em;" class="bi bi-bell-fill"></i>
+                </li>
+                <li class="nav-item active mr-3" id="user">
+                    <a href="#"></a>
+                </li>
+                <li class="nav-item active mr-5">
+                    <i style="font-size: 0.8em;" class="bi bi-caret-down-fill"></i>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- MAIN SECTION -->
+<div class="d-flex flex-column">
+    <div class="hero">
+        <div>
+            <img class="logofilm" src="./../../assets/logo friends.webp" alt="">
+            <p>Le disavventure di sei ventenni in balia delle insidie della vita lavorativa e amorosa sono sl centro di questa sitcom di successo sullo sfondo della Manhattan anni '90.</p>
+            <div class="buttons">
+                <button type="button" class="btn btn-light"><i style="font-size: 2.5em;" class="bi bi-play-fill"></i> Riproduci</button>
+                <button type="button" class="btn btn-secondary ml-3"><i style="font-size: 1.5em;" class="bi bi-info-circle"></i> <span style="color: transparent;">a</span> Altre info</button>
+            </div>
+        </div>
+    </div>
+    <div class="media-container">
+
+        <div>
+            <!-- tv show list list -->
+            <div class="text-light mt-5 ml-5">
+                <h2>Serie TV</h2>
+            </div>
+
+            <owl-carousel-o [options]="customOptions">
+
+                <ng-container>
+                    <ng-template carouselSlide *ngFor="let item of popularTVs">
+
+                        <div (mouseover)="details=true" (mouseout)="details=false" class="card ml-5" style="width: 218px; height: 123px;
+                     background-image: url('{{item.backdrop_path}}');
+                     background-position: center;
+                     background-size:cover;
+                     border: 1px solid black;">
+
+                            <div *ngIf="details" class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                    </ng-template>
+
+
+
+                </ng-container>
+
+            </owl-carousel-o>
+
+            <div>
+                <!-- tv show list list -->
+                <div class="text-light mt-5 ml-5">
+                    <h2>Film</h2>
+                </div>
+
+
+
+
+                <owl-carousel-o [options]="customOptions">
+
+                    <ng-container>
+                        <ng-template carouselSlide *ngFor="let item of popularMovies">
+
+                            <div (mouseover)="details=true" (mouseout)="details=false" class="card ml-5" style="width: 218px; height: 123px;
+                       background-image: url('{{item.backdrop_path}}');
+                       background-position: center;
+                       background-size:cover;">
+
+                                <div *ngIf="details" class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                        </ng-template>
+
+
+
+                    </ng-container>
+
+                </owl-carousel-o>
+            </div>
+        </div>

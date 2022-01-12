@@ -1,0 +1,64 @@
+// // navbar //
+nav {
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    width: 7rem;
+    margin-left: 2.5rem;
+}
+
+.hero {
+    background-image: url("./../../assets/sfondofriends.webp");
+    height: 95vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logofilm {
+    width: 25rem;
+    height: 15rem;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    z-index: 2;
+    position: relative;
+}
+
+.buttons {
+    margin-left: 5rem;
+    margin-bottom: 7rem;
+    display: flex;
+    button {
+        display: flex;
+        align-items: center;
+        padding: 0px 15px;
+        height: 2.7rem;
+    }
+}
+
+p {
+    max-width: 30rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+#user {
+    background-image: url('./../../assets/La-Casa-de-Papel_Profile-Icon_01_Denver.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.media-container {
+    background-color: black;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");

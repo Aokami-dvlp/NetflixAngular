@@ -31,10 +31,11 @@ a:hover>img {
 }
 
 .title {
-    position: relative;
     color: white;
     text-align: center;
     min-height: 20px;
+    font-size: 3.2rem;
+    margin-top: 10%;
 }
 
 .add-user-button img {
@@ -55,4 +56,11 @@ a:hover>img {
 .add-button-icon {
     width: 160px;
     height: 160px;
+}
+
+.btn-outline-secondary {
+    width: 14%;
+    font-size: 1.2rem;
+    border-radius: 0px;
+    letter-spacing: 1.5px;
 }
