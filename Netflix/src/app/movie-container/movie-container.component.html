@@ -1,117 +1,140 @@
 <!-- navbar -->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
 
-        <a class="navbar-brand" href="#"><img class="logo" src="./../../assets/Netflix-Logo.wine.svg" alt=""></a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#"><img class="logo" src="./../../assets/Netflix-Logo.wine.svg" alt=""></a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button> -->
-        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Serie TV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Film</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nuovi e popolari</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">La mia lista</a>
-                </li>
-            </ul>
+    <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Serie TV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Film</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nuovi e popolari</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">La mia lista</a>
+        </li>
+      </ul>
 
 
-            <!-- dropdown destra -->
+      <!-- dropdown destra -->
 
-            <ul class="navbar-nav d-flex align-items-center">
-                <li class="nav-item active mr-3">
-                    <i style="font-size: 1.3em;" class="bi bi-search"></i>
-                </li>
-                <li class="nav-item active mr-3">
-                    <a class="nav-link" href="#">bambini</a>
-                </li>
-                <li class="nav-item active mr-3">
-                    <i style="font-size: 1.4em;" class="bi bi-bell-fill"></i>
-                </li>
-                <li class="nav-item active mr-3" id="user">
-                    <a href="#"></a>
-                </li>
-                <li class="nav-item active mr-5">
-                    <i style="font-size: 0.8em;" class="bi bi-caret-down-fill"></i>
-                </li>
-            </ul>
-        </div>
+      <ul class="navbar-nav d-flex align-items-center">
+        <li class="nav-item active mr-3">
+          <i style="font-size: 1.3em;" class="bi bi-search"></i>
+        </li>
+        <li class="nav-item active mr-3">
+          <a class="nav-link" href="#">Bambini</a>
+        </li>
+        <li class="nav-item active mr-3">
+          <i style="font-size: 1.4em;" class="bi bi-bell-fill"></i>
+        </li>
+        <li class="nav-item active mr-3">
+          <div class="dropdown ">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuOffset" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="assets/La-Casa-de-Papel_Profile-Icon_01_Denver.jpg" alt="" id="user">
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuOffset" id="userspec">
+        <li>
+          <a class=" text-light " href="#"><img src="assets/profilobimbi.png" id="sezione" alt=""> Bambini</a>
+        </li>
+        <li>
+          <a class="  text-light" href="#">Gestisci i profili</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li>
+          <a class="text-light" href="#"> Account</a>
+        </li>
+        <li>
+          <a class="text-light" href="#"> Centro Assistenza</a>
+        </li>
+        <li>
+          <a class="text-light" href="#"> Esci da Netflix</a>
+        </li>
+    </div>
+    </div>
+    </ul>
+    </div>
 
-    </nav>
+  </nav>
 </header>
 
 
 <!-- MAIN SECTION -->
 <div class="d-flex flex-column">
-    <div class="hero">
-        <div>
-            <img class="logofilm" src="./../../assets/logo friends.webp" alt="">
-            <p>Le disavventure di sei ventenni in balia delle insidie della vita lavorativa e amorosa sono sl centro di questa sitcom di successo sullo sfondo della Manhattan anni '90.</p>
-            <div class="buttons">
-                <button type="button" class="btn btn-light"><i style="font-size: 2.5em;" class="bi bi-play-fill"></i> Riproduci</button>
-                <button type="button" class="btn btn-secondary ml-3"><i style="font-size: 1.5em;" class="bi bi-info-circle"></i> <span style="color: transparent;">a</span> Altre info</button>
-            </div>
-        </div>
+  <div class="hero">
+    <div>
+      <img class="logofilm" src="./../../assets/logo friends.webp" alt="">
+      <p>Le disavventure di sei ventenni in balia delle insidie della vita lavorativa e amorosa sono sl centro di questa
+        sitcom di successo sullo sfondo della Manhattan anni '90.</p>
+      <div class="buttons">
+        <button type="button" class="btn btn-light"><i style="font-size: 2.5em;" class="bi bi-play-fill"></i>
+          Riproduci</button>
+        <button type="button" class="btn btn-secondary ml-3"><i style="font-size: 1.5em;" class="bi bi-info-circle"></i>
+          <span style="color: transparent;">a</span> Altre info</button>
+      </div>
     </div>
-    <div class="media-container">
+  </div>
+  <div class="media-container">
 
-        <div>
-            <!-- tv show list list -->
-            <div class="text-light mt-5 ml-5">
-                <h2>Serie TV</h2>
+    <div>
+      <!-- tv show list list -->
+      <div class="text-light ml-5">
+        <h2>Serie TV</h2>
+      </div>
+
+      <owl-carousel-o [options]="customOptions" class="topolino">
+
+        <ng-container>
+          <ng-template carouselSlide *ngFor="let item of popularTVs">
+            <div class="card mb-5" style="width: 18rem;" (mouseover)="detailstv=true" (mouseout)="detailstv=false">
+              <img src="{{item.backdrop_path}}" class="card-img-top" alt="...">
+              <div class="card-footer pippo" *ngIf="detailstv">
+                <h3 class="card-body mt-2 text-light">{{item.title}}</h3>
+                <p class="card-text paperino">{{item.overview}}</p>
+              </div>
             </div>
 
-            <owl-carousel-o [options]="customOptions">
+            <!-- <div (mouseover)="details=true" (mouseout)="details=false" class="card carder ml-5 ">
+                      </div>
+                      <div >
+                        <div class="card carder ml-5 " (mouseover)="details=true" (mouseout)="details=false" >
+                          <img src="{{item.backdrop_path}}" class="card-img-top" alt="...">
+                          <div class="card-body pippo" style="background-image: url('{{item.backdrop_path}}');" >
 
-                <ng-container>
-                    <ng-template carouselSlide *ngFor="let item of popularTVs">
-
-                        <div (mouseover)="details=true" (mouseout)="details=false" class="card ml-5" style="width: 218px; height: 123px;
-                     background-image: url('{{item.backdrop_path}}');
-                     background-position: center;
-                     background-size:cover;
-                     border: 1px solid black;">
-
-                            <div *ngIf="details" class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+                          </div>
+                        <div class="card-footer" *ngIf="details">
+                          {{item.title}}
                         </div>
+                        </div>
+                  </div> -->
+          </ng-template>
+        </ng-container>
 
-                    </ng-template>
+      </owl-carousel-o>
 
+      <div>
+        <!-- tv show list list -->
+        <div class="text-light ml-5 topolino">
+          <h2>Film</h2>
+        </div>
 
+        <owl-carousel-o [options]="customOptions">
 
-                </ng-container>
+          <ng-container>
+            <ng-template carouselSlide *ngFor="let item of popularMovies">
 
-            </owl-carousel-o>
-
-            <div>
-                <!-- tv show list list -->
-                <div class="text-light mt-5 ml-5">
-                    <h2>Film</h2>
-                </div>
-
-
-
-
-                <owl-carousel-o [options]="customOptions">
-
-                    <ng-container>
-                        <ng-template carouselSlide *ngFor="let item of popularMovies">
-
-                            <div (mouseover)="details=true" (mouseout)="details=false" class="card ml-5" style="width: 218px; height: 123px;
+              <!-- <div (mouseover)="details=true" (mouseout)="details=false" class="card ml-5" style="width: 218px; height: 123px;
                        background-image: url('{{item.backdrop_path}}');
                        background-position: center;
                        background-size:cover;">
@@ -121,14 +144,54 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
-                            </div>
+                            </div> -->
+              <div class="card mb-5" style="width: 18rem;" (mouseover)="detailsfilm=true"
+                (mouseout)="detailsfilm=false">
+                <img src="{{item.backdrop_path}}" class="card-img-top" alt="...">
+                <div class="card-footer pippo" *ngIf="detailsfilm">
+                  <h3 class="card-body mt-2 text-light">{{item.title}}</h3>
+                  <p class="card-text paperino">{{item.overview}}</p>
+                </div>
+              </div>
 
-                        </ng-template>
+            </ng-template>
 
 
 
-                    </ng-container>
 
-                </owl-carousel-o>
+          </ng-container>
+
+        </owl-carousel-o>
+      </div>
+      <div class="topolino">
+        <br>
+      </div>
+    </div>
+<hr style="border: 2px solid white;">
+    <div>
+      <div id="footer" class="static-bottom">
+        <div class="container text-secondary mt-5">
+            <p>Domande? Chiama
+                <a href="tel:800-130-364">800-130-364</a>
+            </p>
+            <!---------------------------- GRID ---------------------------->
+            <div class="row row-cols-4 p-3 ">
+                <a href="#">Domande frequenti</a>
+                <a href="#">Centro Assistenza</a>
+                <a href="#">Condizioni di utilizzo</a>
+                <a href="#">Privacy</a>
+                <a href="#">Preferenze per i cookie</a>
+                <a href="#">Informazioni sull'azienda</a>
             </div>
         </div>
+        <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-wt" id="dropdownBasic1" ngbDropdownToggle>
+              <img src="../assets/world.png" class="img-min">Italiano
+          </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="bc-bl">
+                <button ngbDropdownItem class="opt-grp">Italiano</button>
+                <button ngbDropdownItem class="opt-grp">English</button>
+            </div>
+        </div>
+    </div>
+    </div>

@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { Details, Movie } from 'src/app/shared/interface'
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Details, IDetails, Movie } from 'src/app/shared/interface'
 import { MovieService } from 'src/app/shared/movie.service'
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Observable } from 'rxjs';
+import { IUser } from 'app/models/user-interface';
 
 @Component({
   selector: 'movie-container',
@@ -16,7 +18,8 @@ export class MovieContainerComponent implements OnInit {
    movieDetails:Partial<Details> = {};
    tvDetails:Partial<Details> = {};
    genres!: string[];
-   details: boolean = false;
+   detailstv: boolean = false;
+   detailsfilm: boolean = false;
 
   constructor(private service:MovieService ) { }
 
